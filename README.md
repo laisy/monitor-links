@@ -32,7 +32,7 @@ Note:
 Technologies that I used to develop this api
 
 	- Ruby ON Rails
-	- PostgreSQL
+	- sqlite3
 	- selenium
 	
 ## URL heroku
