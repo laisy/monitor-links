@@ -1,6 +1,6 @@
 # Monitor Links
 
-## Desenvolvido por
+## Developed by
 
 [Laisy C. F. S.](https://github.com/laisy)
 
@@ -27,6 +27,14 @@ Note:
 - selenium documentation: https://www.selenium.dev/documentation/en/
 - test with Cat As A Service *_* cataas.com/cat
 
+## Technologies
+
+Technologies that I used to develop this api
+
+	- Ruby ON Rails
+	- PostgreSQL
+	- selenium
+	
 ## URL heroku
 To view the web client, click here: [Coming soon]
 
