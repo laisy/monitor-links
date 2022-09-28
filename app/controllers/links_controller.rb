@@ -15,6 +15,8 @@ class LinksController < ApplicationController
   def create
     @link = Link.new(link_params)
 
+    @link.url = "https://" + @link.url unless @link.url.include?("https://")
+
     respond_to do |format|
       if @link.save
         format.html { redirect_to link_url(@link), notice: "Link was successfully created." }
@@ -39,6 +41,9 @@ class LinksController < ApplicationController
   end
 
   def destroy
+    screenshots_link = Screenshot.where(link_id: @link.id)
+    screenshots_link.delete_all
+
     @link.destroy
 
     respond_to do |format|

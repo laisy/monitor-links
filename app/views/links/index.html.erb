@@ -24,4 +24,13 @@
 
 <br>
 
-<%= link_to 'New Link', new_link_path %>
+<%= button_to new_link_path, method: :get, class:'button' do %>
+    New Link
+  <% end %>
+<%= button_to init_monitor_path, method: :post, class:'button' do %>
+    Init Monitor
+  <% end %>
+<%= button_to screenshots_path, method: :get, class:'button' do %>
+    Screenshots
+  <% end %>
+
