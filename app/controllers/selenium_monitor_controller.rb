@@ -9,7 +9,7 @@ class SeleniumMonitorController < ApplicationController
         date = DateTime.now
       
         # @driver = Selenium::WebDriver.for :chrome
-        @driver = Selenium::WebDriver.for ENV['CHROME_BINARY_PATH'] || :chrome
+        @driver = Selenium::WebDriver.for ENV['CHROME_DRIVER_PATH'] || :chrome
         wait = Selenium::WebDriver::Wait.new(:timeout => 10)
         @driver.get link.url
       
