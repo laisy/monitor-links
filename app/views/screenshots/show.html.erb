@@ -1,0 +1,8 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Image:</strong>
+  <%= image_tag @screenshot.image_url if @screenshot.image %>
+</p>
+
+<%= link_to 'Back', screenshots_path %>
