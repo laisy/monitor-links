@@ -30,6 +30,9 @@ gem 'bootsnap', '>= 1.4.4', require: false
 
 gem 'shrine', '~> 3.0'
 gem 'mini_magick', '~> 4.9', '>= 4.9.2'
+gem 'selenium-webdriver'
+  # Easy installation and use of web drivers to run system tests with browsers
+gem 'webdrivers'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -50,9 +53,6 @@ end
 group :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '>= 3.26'
-  gem 'selenium-webdriver'
-  # Easy installation and use of web drivers to run system tests with browsers
-  gem 'webdrivers'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
