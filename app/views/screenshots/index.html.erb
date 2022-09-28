@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Screenshots</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Link</th>
+      <th>Image</th>
+      <th>Data</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @screenshots.each do |screenshot| %>
+      <tr>
+        <td><%= screenshot.title %></td>
+        <td><%= image_tag screenshot.image_url if screenshot.image %></td>
+        <td><%= screenshot.created_at %></td>
+        <td><%= link_to 'Show', screenshot %></td>
+        <td><%= link_to 'Destroy', screenshot, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Back', links_path %>
