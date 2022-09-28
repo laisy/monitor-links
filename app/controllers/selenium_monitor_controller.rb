@@ -9,9 +9,7 @@ class SeleniumMonitorController < ApplicationController
         date = DateTime.now
       
         # @driver = Selenium::WebDriver.for :chrome
-        browser = Watir::Browser.new :chrome, args: %w[--headless --no-sandbox --disable-dev-shm-usage --disable-gpu --remote-debugging-port=9222]
-
-        @driver = Selenium::WebDriver.for browser
+        @driver = Selenium::WebDriver.for ENV['CHROME_BINARY_PATH'] || :chrome
         wait = Selenium::WebDriver::Wait.new(:timeout => 10)
         @driver.get link.url
       
