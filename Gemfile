@@ -18,7 +18,8 @@ gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.7'
 # Use Redis adapter to run Action Cable in production
-# gem 'redis', '~> 4.0'
+gem 'redis', '~> 4.0'
+gem 'sidekiq'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 gem 'valid_url'
@@ -33,6 +34,7 @@ gem 'mini_magick', '~> 4.9', '>= 4.9.2'
 gem 'selenium-webdriver'
   # Easy installation and use of web drivers to run system tests with browsers
 gem 'webdrivers'
+gem 'watir'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
