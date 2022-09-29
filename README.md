@@ -45,12 +45,12 @@
 
 ## Funcionamento
 
-	A tela de início possui a listagem de Links e as opções de show, edit e destroy.
-	O botão New link, para criar novos links.
-	O botão Init Monitor tem a função iniciar o selenium monitor, que vai fazer um loop nos links, abrir o browser com o Selenium, fazer o Screenshot e salvar a imagem no banco.
+	The start screen has the Links list and show, edit and destroy options.
+	The New link button, to create new links.
+	The Init Monitor button has the function of starting the selenium monitor, which will loop the links, open the browser with Selenium, take the Screenshot and save the image in the database.
 
 ## Pendente
- 	- JOB de execução de 1 em 1 minuto		
+ 	- JOB running every 1 minute		
 ## URL heroku
 
 To view the web client, click here: https://monitor-links.herokuapp.com/
