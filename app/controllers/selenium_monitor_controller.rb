@@ -1,5 +1,4 @@
 class SeleniumMonitorController < ApplicationController
-  before_action :set_flag_true, only: %i[ create ]
   require 'selenium-webdriver'
 
   def create
@@ -27,15 +26,5 @@ class SeleniumMonitorController < ApplicationController
     
       File.delete(path) if File.exist?(path)
     end
-  end
-
-  def set_flag_true
-    @flag = true
-  end
-
-  def set_flag_false
-    @flag = false
-
-    redirect_to screenshots_path
   end
 end
